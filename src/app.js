@@ -2,14 +2,16 @@ import express from "express";
 import dotenv from "dotenv/config";
 const app = express();
 
-// dotenv.config(); this is already defined while importing dotenv 
+ 
 
 
 app.get("/",(req,res)=>{
-    res.send("hello this is ashish chaurasiya")
+    res.send("hello this is Ashish Chaurasiya")
 })
 
-
+app.get("/about",(req, res)=>{
+    res.send("hello this is the about page")
+})
 
 app.listen(process.env.PORT,()=>{
     console.log("server is running on port 3001")
